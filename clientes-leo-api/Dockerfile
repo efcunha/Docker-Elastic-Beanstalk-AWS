@@ -6,6 +6,8 @@ WORKDIR /home/ubuntu/tcc/
 
 COPY . /home/ubuntu/tcc/
 
+RUN pip install --upgrade pip
+
 RUN pip install -r requirements.txt
 
 RUN sed -i "s/ALLOWED_HOSTS = \[\]/ALLOWED_HOSTS = \['*'\]/" setup/settings.py
