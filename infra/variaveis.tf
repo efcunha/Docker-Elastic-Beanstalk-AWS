@@ -1,3 +1,0 @@
-variable "nome" {
-  type = string
-}
